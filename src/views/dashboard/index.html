@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard Groupware</title>
+  
+</head>
+<body>
+  <div id="vizContainer"></div>
+  <script src="http://dashboard.jabarprov.go.id/javascripts/api/tableau-2.min.js"></script>
+  <script>
+    var viz
+    function initViz() {
+      var containerDiv = document.getElementById("vizContainer"),
+      url = "http://dashboard.jabarprov.go.id/views/DashboardGroupware/DashboardRingkasanKaryawan";
+
+      viz = new tableau.Viz(containerDiv, url);
+    }
+    initViz();
+  </script>
+  
+</body>
+</html>
